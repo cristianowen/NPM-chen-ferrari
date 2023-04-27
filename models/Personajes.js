@@ -7,4 +7,4 @@ class Personaje {
     Historia;
     Películas;
 }
-export default Personaje;
+export default Personajess;
