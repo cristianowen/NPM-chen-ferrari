@@ -3,6 +3,7 @@ import config from './../../dbconfig.js';
 
 class PeliculasService {
     getAll = async () => {
+      console.log(config  )
       let returnArray=null
       console.log("estoy en peliculas.getALL")
       try {

@@ -81,3 +81,5 @@ async function getByIdPeli(id){
     console.log(data);
 }
 console.log(await getByIdPeli(id))
+
+export default botonfunciona

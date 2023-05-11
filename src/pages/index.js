@@ -1,4 +1,4 @@
-import fnc from './../../index'
+import fnc from './../../index.js'
 const index = (pelis, personajes) => `
     <h3>
         <a href="/personajes" target="_blank">Ver a: /personajes</a>
