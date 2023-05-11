@@ -1,14 +1,21 @@
-const index = `
+import fnc from './../../index'
+const index = (pelis, personajes) => `
     <h3>
-        <a href="/auth/login">Ir a: /auth/login</a>
+        <a href="/personajes" target="_blank">Ver a: /personajes</a>
         <br>
-        <a href="/characters" target="_blank">Ir a: /characters</a>
+        <a href="/peliculas" target="_blank">Ver a: /peliculas</a>
     </h3>
-    <h1>Hola mundo!</h1>
+    <h1>Funciones</h1>
     <form method="post" action="/">
-        <input type="test" name="insert" value="Deshabilitado" disabled>
-        <input type="submit" disabled>
+        <input type="test" name="insert" value="borrar" disabled>
+
     </form>
+    <button >console log 2</button>
+    <h1>Pelis</h1>
+    <p>${pelis}</p>
+    <h1>Personajes</h1>
+    <p>${personajes}</p>
+    
 `
 
 export default index
