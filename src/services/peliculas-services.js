@@ -10,7 +10,7 @@ class PeliculasService {
         let pool = await sql.connect(config)
         let result = await pool.request()
         .query('SELECT * FROM Peliculas')
-        returnArray =result.recordsets[0]
+        returnArray = result.recordsets[0]
       } catch (error) {
         console.log(error)
       }
@@ -23,8 +23,8 @@ class PeliculasService {
       try {
         let pool = await sql.connect(config)
         let result = await pool.request()
-        .input('pId',sql.int, id)
-        .query('SELECT * FROM Peliculas WHERE id = pId')
+        .input('pId',sql.Int, id)
+        .query('SELECT * FROM Peliculas WHERE id = @pId')
         returnEntity =result.recordsets[0][0]
       } catch (error) {
         console.log(error)
